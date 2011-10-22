@@ -1,0 +1,44 @@
+package com.androidquery.facebook;
+
+import org.json.JSONObject;
+
+import com.androidquery.AQuery;
+import com.androidquery.callback.AjaxCallback;
+import com.androidquery.callback.AjaxStatus;
+import com.androidquery.util.AQUtility;
+
+import android.app.Activity;
+import android.os.Bundle;
+
+public class AQSimpleFacebookActivity extends Activity {
+    /** Called when the activity is first created. */
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main);
+        //dwdw
+    }
+    
+	public void async_json(){
+	    
+		AQuery aq = new AQuery(this);
+		
+        String url = "http://www.google.com/uds/GnewsSearch?q=Obama&v=1.0";
+        
+        AjaxCallback<JSONObject> cb = new AjaxCallback<JSONObject>() {
+
+            @Override
+            public void callback(String url, JSONObject json, AjaxStatus status) {
+                 
+                //showResult(json, status);
+            	AQUtility.debug(json);
+            }
+        };
+        
+        cb.url(url).type(JSONObject.class);
+        aq.ajax(cb);
+        
+	        
+	}	
+    
+}
