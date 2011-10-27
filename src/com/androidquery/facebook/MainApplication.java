@@ -9,6 +9,7 @@ import android.os.Environment;
 
 import com.androidquery.callback.AjaxCallback;
 import com.androidquery.callback.BitmapAjaxCallback;
+import com.androidquery.facebook.util.ErrorReporter;
 import com.androidquery.util.AQUtility;
 
 
@@ -25,6 +26,8 @@ public class MainApplication extends Application{
 		System.err.println("FB started");
 		
         context = getApplicationContext();
+        
+        ErrorReporter.installReporter(context);
         
         /*
         File ext = Environment.getExternalStorageDirectory();

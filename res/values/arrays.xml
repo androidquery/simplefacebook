@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+ 
+  
+  	<string-array name="debug_items">
+        <item>Clear Disk Cache</item>
+        <item>Clear Memory Cache</item> 
+    </string-array>
+    
+  	    
+  	<string-array name="action_items">
+        <item>Like</item>
+        <item>Comment</item>   
+    </string-array>    
+   
+  
+</resources>
