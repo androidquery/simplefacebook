@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+	
+	<RelativeLayout 
+	    android:id="@+id/comment_box"   
+    	android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"    
+	    android:layout_alignParentBottom="true"
+	    android:background="#FFFFFF"
+	    android:paddingTop="3dip"
+	    android:paddingLeft="3dip"
+	    android:paddingRight="3dip"
+    >
+        <EditText 
+            android:id="@+id/edit_comment"   
+            android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:focusable="false"  
+	    	android:focusableInTouchMode="false"
+	    	android:hint="@string/comment"
+            />
+	    
+    </RelativeLayout> 
+    
+    
+    <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/list" 
+	    android:layout_alignParentTop="true"
+	    android:layout_above="@id/comment_box"  
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"    
+	    android:smoothScrollbar="false"
+	    android:background="@color/comment"
+	    android:cacheColorHint="@color/comment"
+	    android:visibility="gone"
+	    >
+	    
+	    
+	</ListView>
+	
+    <LinearLayout 
+        android:layout_width="wrap_content"
+	   	android:layout_height="wrap_content"
+	   	android:layout_centerInParent="true"
+        >    
+        
+	   	<ProgressBar
+	        android:id="@+id/progress"   
+	        android:layout_width="wrap_content"
+	   		android:layout_height="wrap_content"
+	   		android:visibility="gone"
+	       />
+	   	
+	   	<TextView 
+	   	    android:id="@+id/text_error"   
+	   	    android:layout_width="wrap_content"
+	   		android:layout_height="fill_parent"
+	   		android:text="@string/p_no_content"
+	   		android:gravity="center_vertical"
+	   		android:visibility="gone"
+	   	    />
+	 
+   	</LinearLayout>
+   	
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@color/feed"
+	>
+	
+    <EditText 
+        android:id="@+id/edit_input"   
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" 
+	    android:layout_marginTop="3dip"
+	    android:layout_marginLeft="3dip"
+	    android:layout_marginRight="3dip"
+	    android:hint="@string/v_search"  
+	    android:singleLine="true"      
+        />
+    
+    <ListView 
+	    android:id="@+id/list"   
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"    
+	    android:smoothScrollbar="true"
+	    android:layout_weight="1"
+	    android:background="@color/feed"
+	    android:cacheColorHint="@color/feed"
+	    >
+	    
+	</ListView>
+	 
+    <RelativeLayout 
+        android:id="@+id/done_box"   
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" 
+	    android:layout_weight="0"
+	    android:visibility="gone"
+        >
+        
+        
+        
+        <Button 
+            android:id="@+id/button_done"   
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content" 
+	    	android:text="@string/done"
+	    	android:drawableLeft="@drawable/ic_menu_allfriends"
+	    	android:drawablePadding="6dip"
+	    	android:layout_centerInParent="true"
+            />
+        
+    </RelativeLayout>    
+        
+        
+</LinearLayout>

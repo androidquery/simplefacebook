@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ActionBar" parent="@android:style/Widget.Holo.ActionBar">
+		<item name="android:background">@drawable/action_bar_bg</item>
+	</style>
+    
+	<style name="Theme.SimpleFacebook" parent="android:Theme.Holo.Light">
+		
+		<item name="android:backgroundDimEnabled">false</item>
+		<item name="android:actionBarStyle">@style/ActionBar</item>
+		
+	</style>
+	
+</resources>

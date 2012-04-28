@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@color/feed"
+    >
+	<LinearLayout 
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		>
+		
+	    <LinearLayout 
+	        android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="3dip"
+		    android:layout_marginLeft="3dip"
+		    android:layout_marginRight="3dip"
+	        >
+		    
+		    <EditText 
+		        android:id="@+id/edit_input"   
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1" 
+			    android:layout_marginRight="3dip"
+			    android:hint="@string/v_search"  
+			    android:singleLine="true"      
+		        />
+		    
+		    
+			<Button 
+	            android:id="@+id/button_search"   
+	            android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:layout_weight="0" 
+		    	android:layout_alignParentRight="true"
+		    	android:text="@string/v_search"
+	            />
+		    
+	    </LinearLayout>
+	    
+	    <RelativeLayout  
+	        android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="3dip"
+		    android:layout_marginLeft="10dip"
+		    android:layout_marginRight="10dip"
+		    android:visibility="gone"
+	        >
+		    
+	        
+			<Button 
+	            android:id="@+id/button_gps"   
+	            android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:layout_centerInParent="true"
+		    	android:text="@string/enable_gps"
+	            />
+		    
+	    </RelativeLayout>    
+	        
+	        
+	    <!--  
+	    <RelativeLayout  
+	        android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="40dip"
+			android:layout_marginTop="3dip"
+		    android:layout_marginLeft="10dip"
+		    android:layout_marginRight="10dip"
+	        >
+		    
+	        <TextView 
+	            android:id="@+id/text_gps"   
+	            android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:text="@string/p_location_update"
+		    	android:gravity="center_vertical"
+		    	android:layout_alignParentTop="true"
+		    	android:layout_alignParentBottom="true"
+		    	android:textSize="18sp"
+	            />
+	        
+			<Button 
+	            android:id="@+id/button_gps"   
+	            android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:layout_weight="0" 
+		    	android:layout_alignParentRight="true"
+		    	android:text="@string/enable_gps"
+	            />
+		    
+	    </RelativeLayout>
+	    -->
+	    <ListView 
+		    android:id="@+id/list"   
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"    
+		    android:smoothScrollbar="true"
+		    android:background="@color/feed"
+	    	android:cacheColorHint="@color/feed"
+		    >
+		    
+		    
+		</ListView>
+		 
+	</LinearLayout>
+
+	<LinearLayout 
+	    android:layout_width="wrap_content"
+	   	android:layout_height="wrap_content"
+	   	android:layout_centerInParent="true"
+	    >
+	    
+	    
+	   	<ProgressBar
+	        android:id="@+id/progress"   
+	        android:layout_width="30dip"
+	   		android:layout_height="30dip"
+	   		
+	       />
+	   	
+	   	<TextView 
+	   	    android:id="@+id/text_progress"   
+	        android:layout_width="wrap_content"
+	   		android:layout_height="fill_parent"
+	   		android:layout_marginLeft="10dip"
+	   		android:gravity="center_vertical"
+	   	    android:text="Location Detection Failed"
+	   	    android:visibility="gone"
+	   	    />
+	   	
+   	</LinearLayout>    
+	 
+   	
+</RelativeLayout>   	

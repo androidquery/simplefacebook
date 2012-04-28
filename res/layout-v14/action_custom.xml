@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    >
+    
+    <ImageView 
+        android:id="@+id/image_action_bar"   
+        android:layout_width="32dip"
+    	android:layout_height="32dip"
+    	android:layout_marginLeft="10dip"
+    	android:src="@drawable/launcher"
+    	android:layout_centerVertical="true"
+        />
+    
+    <TextView 
+        android:id="@+id/text_action_title"   
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_marginLeft="10dip"
+    	android:layout_toRightOf="@id/image_action_bar"
+    	android:singleLine="true"
+    	android:textSize="16sp"
+    	android:text="Peter Liu"
+    	android:textStyle="bold"
+    	android:gravity="center_vertical"
+    	android:layout_centerVertical="true"
+    	android:textColor="@color/fb"
+        />
+    
+    <Spinner 
+        android:id="@+id/spinner_action_bar"   
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_marginLeft="8dip"
+    	android:layout_toRightOf="@id/text_action_title"
+    	android:layout_centerVertical="true"
+        />
+</RelativeLayout>
+
+

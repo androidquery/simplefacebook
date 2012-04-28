@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+
+	<color name="transdark">#aa000000</color>
+	<color name="translight">#33000000</color>
+	<color name="selected">#FFFFFFFF</color>
+	<color name="comment">#FFFFFFFF</color>
+	<color name="feed">#FFFFFFFF</color>
+	<color name="ph">#FFEEEEEE</color>
+	<color name="white">#FFFFFFFF</color>
+	<color name="black">#FF000000</color>
+	<color name="noti">#FFdd7777</color>
+	<color name="grey">#AAAAAA</color>
+	<color name="fb">#3B5998</color>
+	
+	    
+	
+	<color name="actionbar_separator">#306492</color>
+    <color name="actionbar_title">#FFFFFF</color>
+    <color name="actionbar_background_start">#5693CB</color>
+    <color name="actionbar_background_end">#306492</color>
+    <color name="actionbar_background_item_pressed_start">#FF7F00</color>
+    <color name="actionbar_background_item_pressed_end">#EE7600</color>    
+	    
+	    
+</resources>

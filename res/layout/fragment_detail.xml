@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"	
+	android:background="@color/feed"	
+	>
+	
+    
+    <WebView 
+        android:id="@+id/web"
+        android:layout_width="fill_parent"
+		android:layout_height="fill_parent" 
+		android:visibility="gone"       
+        />
+    
+    <RelativeLayout 
+    	android:id="@+id/image_box"
+        android:layout_width="fill_parent"
+		android:layout_height="fill_parent" 
+		android:background="#000000"
+		android:padding="10dip"
+		android:visibility="gone"   
+    >
+		<WebView 
+	        android:id="@+id/web_image"
+	        android:layout_width="fill_parent"
+			android:layout_height="fill_parent"        
+	        />
+    </RelativeLayout>
+        
+    <RelativeLayout 
+    	android:id="@+id/video_box"
+        android:layout_width="fill_parent"
+		android:layout_height="fill_parent" 
+		android:background="#000000"
+		android:padding="10dip"
+    >
+		<WebView 
+	        android:id="@+id/web_video"
+	        android:layout_width="fill_parent"
+			android:layout_height="fill_parent"        
+	        />
+		
+		<ImageView 
+		    android:id="@+id/button_video"
+		    android:layout_width="85dip"
+			android:layout_height="50dip"  
+			android:src="@drawable/ic_media_play"
+			android:layout_centerInParent="true"
+			android:background="@color/transdark"
+			android:paddingLeft="25dip"
+			android:paddingRight="20dip"
+			android:paddingTop="5dip"
+			android:paddingBottom="5dip"
+		    />
+		
+    </RelativeLayout>
+    
+    <ImageView 
+        android:id="@+id/button_full"
+        android:layout_width="40dip"
+		android:layout_height="40dip"
+		android:layout_marginTop="20dip"
+		android:layout_marginRight="20dip"
+		android:layout_alignParentRight="true"
+		android:src="@drawable/ic_media_fullscreen"
+		android:background="@color/translight"
+		android:visibility="visible"
+        />
+    
+	<ImageView 
+        android:id="@+id/button_comment"
+        android:layout_width="40dip"
+		android:layout_height="40dip"
+		android:layout_marginTop="70dip"
+		android:layout_marginRight="20dip"
+		android:layout_alignParentRight="true"
+		android:src="@drawable/ic_menu_start_conversation"
+		android:background="@color/translight"
+		android:visibility="visible"
+        />
+    
+    <ImageView 
+        android:id="@+id/button_expand"
+        android:layout_width="40dip"
+		android:layout_height="40dip"
+		android:layout_marginTop="70dip"
+		android:layout_marginRight="20dip"
+		android:layout_alignParentRight="true"
+		android:src="@drawable/ic_menu_forward"
+		android:background="@color/translight"
+		android:visibility="visible"
+        />
+    
+    
+    <ProgressBar 
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:layout_centerInParent="true"
+		android:visibility="gone"
+        />    
+	        
+</RelativeLayout>

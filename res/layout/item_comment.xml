@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="8dip"
+    android:paddingRight="8dip"
+    android:paddingBottom="6dip"
+    android:paddingTop="5dip"
+    android:background="@color/comment"
+    >
+
+    <ImageView
+        android:id="@+id/tb"   
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_marginTop="3dip"
+        android:background="#EEEEEE"
+    />
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	android:layout_marginLeft="8dip"
+    	
+    >
+    	<TextView 
+    	    android:id="@+id/name" 
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"   
+    		android:text="Peter Liu"
+    		android:textSize="14sp"
+    		android:textColor="#3B5998"
+    		android:textStyle="bold"
+    	/>
+    	
+    	<com.androidquery.simplefeed.ui.SlimTextView 
+    	    android:id="@+id/desc" 
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"   
+    		android:text="I like this app!"
+    		android:textSize="14sp"
+    	/>
+    	
+    	
+    
+    	    
+    </LinearLayout>
+
+</LinearLayout>

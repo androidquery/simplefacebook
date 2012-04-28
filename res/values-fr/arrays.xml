@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="debug_items">
+        <item>Clear Disk Cache</item>
+        <item>Clear Memory Cache</item>
+        <item>Switch Locale</item>
+    </string-array>
+    <string-array name="action_items">
+        <item>J’aime</item>
+        <item>Commenter</item>
+        <item>Lire les commentaires</item>
+    </string-array>
+    <string-array name="image_pref_items">
+        <item>Never</item>
+        <item>WiFi Only</item>
+        <item>Always</item>
+    </string-array>
+    <string-array name="image_pref_values">
+        <item>NEVER</item>
+        <item>WIFI</item>
+        <item>ALWAYS</item>
+    </string-array>
+    <string-array name="locale_items">
+        <item>device</item>
+        <item>en</item>
+        <item>zh</item>
+        <item>zh_CN</item>
+        <item>fr</item>
+        <item>de</item>
+        <item>it</item>
+        <item>es</item>
+        <item>nl</item>
+        <item>pl</item>
+        <item>cs</item>
+        <item>pt</item>
+        <item>ja</item>
+        <item>ko</item>
+        <item>ru</item>
+        <item>sv</item>
+        <item>no</item>
+        <item>da</item>
+        <item>fi</item>
+    </string-array>
+    <string-array name="locale_values">
+        <item />
+        <item>en</item>
+        <item>zh_TW</item>
+        <item>zh_CN</item>
+        <item>fr</item>
+        <item>de</item>
+        <item>it</item>
+        <item>es</item>
+        <item>nl</item>
+        <item>pl</item>
+        <item>cs</item>
+        <item>pt</item>
+        <item>ja</item>
+        <item>ko</item>
+        <item>ru</item>
+        <item>sv</item>
+        <item>no</item>
+        <item>da</item>
+        <item>fi</item>
+    </string-array>
+</resources>

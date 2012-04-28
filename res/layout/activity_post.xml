@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+	
+    
+    <EditText 
+	    android:id="@+id/edit_input"   
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:inputType="textShortMessage|textAutoCorrect|textCapSentences|textMultiLine"
+	    android:imeOptions="actionDone|flagNoEnterAction"
+	    android:hint="Message..."
+	    android:shadowRadius="0"
+	    android:gravity="top"
+	    android:layout_weight="1"
+	    android:layout_margin="6dip"
+	>
+    	<requestFocus />
+    </EditText>
+    
+    <RelativeLayout 
+        android:id="@+id/image_box" 
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="0"
+	    android:layout_margin="6dip"
+	    android:visibility="gone"
+        >
+        
+        <ImageView
+            android:id="@+id/image_photo"   
+            android:layout_width="40dip"
+	    	android:layout_height="40dip"
+	    	android:layout_marginLeft="10dip"
+	    	android:layout_marginRight="10dip"
+            />
+        
+        <TextView 
+            android:id="@+id/text_dim" 
+	        android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_toRightOf="@id/image_photo"
+		    android:text="600x480"
+		    android:visibility="gone"
+            />
+        
+        <TextView 
+            android:id="@+id/text_size" 
+	        android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_toRightOf="@id/image_photo"
+		    android:layout_below="@id/text_dim"
+		    android:text="1,343 kb"
+		    android:visibility="gone"
+            />
+        
+        <ImageButton 
+            android:id="@+id/button_remove_image" 
+            android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/ic_menu_clear_playlist"
+		    android:layout_alignParentRight="true"
+            />
+        
+        <Spinner 
+	        android:id="@+id/spinner_album"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:drawSelectorOnTop="true"
+	        android:prompt="@string/photo_album"
+	        android:layout_toRightOf="@id/text_size"
+	        android:layout_toLeftOf="@id/button_remove_image"
+	        android:visibility="gone"
+	    />
+        
+    </RelativeLayout>          
+       
+    <RelativeLayout 
+        android:id="@+id/place_box" 
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="0"
+	    android:layout_margin="6dip"
+	    android:visibility="gone"
+        >
+        
+        <ImageView
+            android:id="@+id/image_place"   
+            android:layout_width="40dip"
+	    	android:layout_height="40dip"
+	    	android:background="@color/ph"
+	    	android:layout_marginLeft="10dip"
+	    	android:layout_marginRight="10dip"
+            />
+        
+        <ImageButton 
+            android:id="@+id/button_remove_place" 
+            android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/ic_menu_clear_playlist"
+		    android:layout_alignParentRight="true"
+            />
+        
+        <TextView 
+            android:id="@+id/text_place" 
+	        android:layout_width="wrap_content"
+		    android:layout_height="40dip"
+		    android:layout_toRightOf="@id/image_place"
+		    android:layout_toLeftOf="@id/button_remove_place"
+		    android:text="Peak One"
+		    android:textSize="20sp"
+		    android:gravity="center_vertical"
+		    android:singleLine="true"
+            />
+        
+    </RelativeLayout>           
+        
+    <RelativeLayout 
+        android:id="@+id/tags_box" 
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="0"
+	    android:layout_margin="6dip"
+	    android:visibility="gone"
+        >
+        
+        <ImageView  
+            android:id="@+id/image_tags" 
+            android:layout_width="40dip"
+	    	android:layout_height="40dip"
+	    	android:layout_marginLeft="10dip"
+	    	android:layout_marginRight="10dip"
+	    	android:src="@drawable/ic_menu_allfriends"
+            />
+        
+        <ImageButton 
+            android:id="@+id/button_remove_tags" 
+            android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/ic_menu_clear_playlist"
+		    android:layout_alignParentRight="true"
+            />
+        
+        <TextView 
+            android:id="@+id/text_tags" 
+	        android:layout_width="wrap_content"
+		    android:layout_height="40dip"
+		    android:layout_toRightOf="@id/image_tags"
+		    android:layout_toLeftOf="@id/button_remove_tags"
+		    android:text="5 Friends"
+		    android:textSize="20sp"
+		    android:gravity="center_vertical"
+		    android:singleLine="true"
+            />
+        
+    </RelativeLayout>          
+        
+    <RelativeLayout 
+        android:id="@+id/button_box" 
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="0"
+    	android:layout_marginLeft="6dip"
+    	android:layout_marginRight="6dip"
+        >
+        
+        <ImageButton 
+            android:id="@+id/button_gallery"   
+            android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:src="@drawable/ic_menu_gallery"
+            />
+        
+        <ImageButton 
+            android:id="@+id/button_photo"   
+            android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_toRightOf="@id/button_gallery"
+	    	android:src="@drawable/ic_menu_camera"
+            />
+        
+        
+            
+        <ImageButton 
+            android:id="@+id/button_checkin"   
+            android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_toRightOf="@id/button_photo"
+	    	android:src="@drawable/ic_menu_mylocation"
+            />
+        
+        <ImageButton 
+            android:id="@+id/button_tags"   
+            android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_toRightOf="@id/button_checkin"
+	    	android:src="@drawable/ic_menu_allfriends"
+            />
+        
+        
+        <Button 
+            android:id="@+id/button_send"   
+            android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_alignParentRight="true"
+	    	android:drawableLeft="@drawable/ic_menu_send"
+	    	android:text="@string/send"
+            />
+        
+        
+        
+    </RelativeLayout>   
+
+	
+</LinearLayout>

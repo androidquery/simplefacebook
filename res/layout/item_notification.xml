@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent" 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="8dip"
+    android:paddingRight="8dip"
+    android:paddingBottom="6dip"
+    android:paddingTop="5dip"
+    >
+
+    <ImageView
+        android:id="@+id/image_tb"   
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_marginTop="3dip"
+        android:background="#EEEEEE"
+    />
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	android:layout_marginLeft="8dip"
+    	
+    >
+    
+        <LinearLayout 
+	        android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="horizontal"
+	    >
+        
+	    	<TextView 
+	    	    android:id="@+id/text_name" 
+	    		android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"  
+	    		android:text="Peter Liu"
+	    		android:textSize="14sp"
+	    		android:textColor="#3B5998"
+	    		android:textStyle="bold"
+	    		android:singleLine="true"
+	    	/>
+	    	
+	    	<!--  
+	    	<TextView 
+	    	    android:id="@+id/text_to" 
+	    		android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"  
+	    		android:text="  >  "
+	    		android:textSize="14sp"
+	    		android:singleLine="true"
+	    	/>
+	    	
+	    	<TextView 
+	    	    android:id="@+id/text_name2" 
+	    		android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"  
+	    		android:text="Caly Xiao"
+	    		android:textSize="14sp"
+	    		android:textColor="#3B5998"
+	    		android:textStyle="bold"
+	    		android:singleLine="true"
+	    	/>
+    		-->
+    	</LinearLayout>
+    	
+            
+        <TextView 
+            android:id="@+id/text_title" 
+            android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"  
+	    	android:text="Alan liked your post."
+    		android:textSize="13sp"
+	    	android:textColor="#AAAAAA"
+            />    
+            
+    	<com.androidquery.simplefeed.ui.SlimTextView 
+    	    android:id="@+id/text_desc" 
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"   
+    		android:text="I like this app!"
+    		android:textColor="#000000"
+    	/>
+    	
+    	<TextView 
+    	    android:id="@+id/text_meta" 
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"   
+    		android:layout_marginTop="2dip"
+    		android:text="2 hours ago"
+    		android:textSize="12sp"
+    		android:textColor="#AAAAAA"
+    		
+    		android:singleLine="true"
+    	/>
+       
+    
+    </LinearLayout>
+
+</LinearLayout>

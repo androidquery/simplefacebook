@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+      
+    <PreferenceCategory android:title="@string/settings">
+                           
+        <Preference
+	        android:key="logout"
+	        android:title="@string/logout"
+	        android:summary="@string/logout_sum"      
+		/>  
+        
+        <CheckBoxPreference
+             android:key="sf.pref.sso"
+             android:title="@string/n_sso"
+             android:summary="@string/p_sso_sum"
+             android:defaultValue="true"
+              /> 	        
+              
+    </PreferenceCategory>
+
+
+    
+    <PreferenceCategory android:title="@string/app_name">
+             
+        <!--        
+		<ListPreference
+                android:key="com.androidquery.simplefeed.enums.ImageMode"
+                android:title="Image Loading"
+                android:summary="Options to save bandwidth."
+                android:entries="@array/image_pref_items"
+                android:entryValues="@array/image_pref_values"
+                android:defaultValue="ALWAYS"
+                android:dialogTitle="Image Options" />  
+        -->
+           
+        <Preference
+	        android:key="share"
+	        android:title="@string/share"
+	        android:summary="@string/share_app_sum"      
+		/>
+        
+        <Preference
+	        android:key="share_others"
+	        android:title="@string/share"
+	        android:summary="@string/share_app_sum"      
+		/>
+        
+        <Preference
+	        android:key="review"
+	        android:title="@string/review"
+	        android:summary="@string/review_app_sum"      
+		/>
+        
+        <Preference
+	        android:key="feedback"
+	        android:title="@string/discuss"
+	        android:summary="" 
+		/>
+        
+        
+        <Preference
+	        android:key="version"
+	        android:title="@string/version"
+	        android:summary="" 
+	        android:enabled="false"
+		/>
+        
+        <Preference
+	        android:key="report"
+	        android:title="@string/report_problem"
+	        android:summary="@string/report_problem_sum" 
+		/>
+        
+        
+        
+        
+        
+        <!--  
+        <ListPreference
+                android:key="locale"
+                android:title="Language"
+                android:summary="Select language"
+                android:entries="@array/locale_items"
+                android:entryValues="@array/locale_values"
+                android:defaultValue="en"
+                android:dialogTitle="Language" />  
+        -->
+        
+    </PreferenceCategory>
+
+    
+</PreferenceScreen>

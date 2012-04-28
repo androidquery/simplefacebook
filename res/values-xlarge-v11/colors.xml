@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+
+	<color name="transdark">#aa000000</color>
+	<color name="translight">#33000000</color>
+	<color name="selected">#FFEEEEFF</color>
+	<color name="comment">#FFEEFFEE</color>
+	<color name="feed">#FFEEEEEE</color>
+	
+</resources>
