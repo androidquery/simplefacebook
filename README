@@ -1,1 +1,20 @@
-Test
+Welcome to the AndroidQuery GitHub home.
+
+This project is a demo project using AndroidQuery features. 
+It is licensed under the Apache License, Version 2.0, with the following restrictions:
+
+ * 1. You cannot use AndroidQuery's Facebook or other third party accounts presented in this app.
+ * 2. You cannot republish this app with advertisements.
+
+
+For more information about AndroidQuery, click [here](http://code.google.com/p/android-query/wiki/AsyncAPI) for wiki at GoogleCode
+or visit:
+http://code.google.com/p/android-query/wiki/AsyncAPI
+
+App home:
+https://play.google.com/store/apps/details?id=com.androidquery.simplefeed
+
+Pull Requests:
+
+  * Pull requests are welcome. We will test and publish new features contributed by the community.
+  * Keep in mind that the app "SimpleFeed" is a simple Facebook feed. Complex features might not be accepted. 

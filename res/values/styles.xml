@@ -1,11 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+
+	
+    
 	<style name="Theme.SimpleFacebook" parent="android:Theme.Light">
-		
 		<item name="android:backgroundDimEnabled">false</item>
-	
 		
+		<!--  
+		<item name="android:windowTitleSize">45dip</item>	
+		<item name="android:windowTitleStyle">@style/CustomWindowTitle</item>
+			
+		<item name="android:windowContentOverlay">@null</item>
+		<item name="android:windowTitleBackgroundStyle">@style/CustomWindowTitleBackground</item>
+		-->
 	</style>
+	<!--  
+	<style name="CustomWindowTitle" parent="android:TextAppearance.WindowTitle">
+    	<item name="android:textSize">18dip</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:visibility">gone</item>
+    </style>
+    
+    <style name="CustomWindowTitleBackground">
+        <item name="android:background">@drawable/actionbar_background</item> 
+    </style>    
+	    
+	    
 	
+    <style name="ActionBar">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">45dip</item>
+        <item name="android:orientation">horizontal</item>
+      
+        <item name="android:background">@drawable/actionbar_background</item>
+        
+    </style>
+    <style name="ActionBarItem">
+        <item name="android:layout_width">45dip</item>
+        <item name="android:layout_height">45dip</item>
+        <item name="android:padding">5dip</item>
+        <item name="android:layout_marginLeft">1px</item>
+    </style>
+    <style name="ActionBarHomeItem" parent="ActionBarItem">
+        <item name="android:layout_marginRight">1px</item>
+        <item name="android:layout_marginLeft">0px</item>
+    </style>
+    <style name="ActionBarHomeLogo">
+        <item name="android:layout_marginRight">1px</item>
+        <item name="android:layout_marginLeft">0px</item>
+    </style>
+    <style name="ActionBarProgressBar" parent="@android:style/Widget.ProgressBar.Small">
+    </style>	    
+	-->    
 </resources>
